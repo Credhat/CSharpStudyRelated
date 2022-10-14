@@ -34,7 +34,6 @@
 ##### 8. 压缩EXE发布(Csharp)
 
 ```Xml
-{
     <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -62,7 +61,6 @@
   </PropertyGroup>
 
 </Project>
-}
 ```
 
 > 使用软件Wrap压缩C#可执行文件
