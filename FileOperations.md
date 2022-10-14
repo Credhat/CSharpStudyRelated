@@ -27,7 +27,7 @@
 
 ### 微软工具箱
 
-- PowerToys :star:
+- [PowerToys](https://github.com/microsoft/PowerToys/releases/) <font color=Green size=1> 👈 Go to Download. </font> :star:
 
 PowerToys Awake 还可以直接从 PowerToys 文件夹作为独立的应用程序执行。 通过 *终端* 或 *.lnk 快捷方式* 文件运行 `PowerToys.Awake.exe` 时，可以使用以下命令行参数：
 
