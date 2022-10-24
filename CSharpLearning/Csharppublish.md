@@ -27,6 +27,8 @@
 `dotnet publish -r win-x86 -c release /p:PublishSingleFile=true /p:publishtrimmed=true`
 `dotnet publish -r win-x64 -c release /p:PublishSingleFile=true /p:publishtrimmed=true`
 
+`dotnet publish -r win-x64 -c release /p:PublishSingleFile=true /p:publishtrimmed=true --output=F:\ReleaseProjects\HYSYSTool_V2.0`
+
 ##### 7. 进入发布后的目录查看是否发布成功
 
 `explorer   D:\publish\mycoreapi`
@@ -45,11 +47,15 @@
     <SelfContained>true</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishReadyToRun>true</PublishReadyToRun>
-  </PropertyGroup>
-  <PropertyGroup>
     <PublishTrimmed>true</PublishTrimmed>
+    <!--版本信息-->
+    <Version>2.0.0</Version>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.1.1</FileVersion>
+    <!--版本信息 END-->
   </PropertyGroup>
 </Project>
+
 //old
 <Project Sdk="Microsoft.NET.Sdk">
 
@@ -86,3 +92,5 @@
 - <font color=Pink>  git rm -r --cached .</font>
 - <font color=Pink>  git add .</font>
 - <font color=Pink>git commit -m 'update .gitignore'</font>
+
+windows-x64.warp-packer.exe --arch windows-x64 --exec HysysTools.exe --input_dir F:\ReleaseProjects\ --output HYSYSTool_trim.exe
