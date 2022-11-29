@@ -9,7 +9,15 @@
 
 &emsp;&emsp; - `del /s/f/q PATH_FileUWannaDelete`
 
-#### **2**   &emsp;&emsp; .bat文件拖拽刪除 :star:&emsp;
+#### **2**   &emsp;&emsp; C# Console Application 支持中文编码 :page_with_curl:&emsp;
+
+```Csharp
+    System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+    Console.OutputEncoding = System.Text.Encoding.GetEncoding("GB2312");
+    .//or Just use  Console.OutputEncoding = System.Text.Encoding.GetEncoding("GBK");
+```
+
+#### **3**   &emsp;&emsp; .bat文件拖拽刪除 :star:&emsp;
 
 &emsp;&emsp; - 新建TXT
 &emsp;&emsp; - `DEL /F /A /Q \\?\%1`     <font color=Green> <----> 第一行内容 </font>
@@ -17,7 +25,7 @@
 &emsp;&emsp; - 更改新建TXT的文件名為`DeleteFile.bat`
 &emsp;&emsp; - 拖拽想要刪除的文件至`DeleteFile.bat` ---> 即可刪除
 
-#### **3**   &emsp;&emsp; 資源管理器刪除
+#### **4**   &emsp;&emsp; 資源管理器刪除
 
 &emsp;&emsp; 1. <font size=2> 按下`Win`鍵 </font>
 &emsp;&emsp; 2. <font size=2> 搜索 ---> `資源管理器` </font>
