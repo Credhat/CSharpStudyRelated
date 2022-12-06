@@ -25,6 +25,9 @@
 &emsp;&emsp; - 更改新建TXT的文件名為`DeleteFile.bat`
 &emsp;&emsp; - 拖拽想要刪除的文件至`DeleteFile.bat` ---> 即可刪除
 
+> Addition:
+> ![Format Explanation](/img/FileOperations/E-2022-12-06-17-10-19.png)
+
 #### **4**   &emsp;&emsp; 資源管理器刪除
 
 &emsp;&emsp; 1. <font size=2> 按下`Win`鍵 </font>
@@ -46,6 +49,18 @@ PowerToys Awake 还可以直接从 PowerToys 文件夹作为独立的应用程�
 |`--time-limit`|Awake 使计算机保持唤醒状态的持续时间（以**秒**为单位）。 可以与 `--display-on` 结合使用。|
 |`--pid`|将 Awake 的执行附加到进程`ID (PID)`。 当具有给定 `PID` 的进程*终止*时，Awake 也将终止。|
 `PS:在缺少命令行参数的情况下，PowerToys Awake 会使计算机处于无限期唤醒状态。`:star::star::star:
+
+### Install .Net 3.5 (sp 1) by using command in CMD
+
+![.NET 35 Installation](/img/FileOperations/E-2022-12-06-17-07-20.png)
+
+```Csharp
+//Recommend
+DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:H:\sources\sxs
+//or
+DISM /Online /Enable-Feature /FeatureName:NetFx3 /Source:H:\sources\sxs
+```
+
 ___
 
 1. [跳转回*强制刪除文件*](#强制刪除文件)
