@@ -7,7 +7,7 @@
 
 #### **1**   &emsp;&emsp; CMD 命令行刪除 :pen:&emsp;
 
-&emsp;&emsp; - `del /s/f/q PATH_FileUWannaDelete`
+&emsp;&emsp;  `del /s/f/q PATH_FileUWannaDelete`
 
 #### **2**   &emsp;&emsp; C# Console Application 支持中文编码 :page_with_curl:&emsp;
 
